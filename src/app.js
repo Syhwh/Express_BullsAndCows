@@ -1,7 +1,7 @@
 
 const exphbs = require('express-handlebars')
 const express = require('express');
-const morgan = require('morgan');
+//const morgan = require('morgan');
 const config = require('./config/config');
 const app = express();
 const port = config.app.port;
@@ -21,7 +21,7 @@ const unexpectedError = (err,req, res, next) => {
 }
 
 //middlewares
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 //static files
 app.use(express.static('./src/public'));
 app.use(express.json());
