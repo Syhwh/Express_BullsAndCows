@@ -7,9 +7,11 @@ const app = express();
 //locals
 app.locals.games = [];
 
-router.get('*', (req, res) => {
+router.get('/', (req, res) => {
    res.render('index')
 })
+
+
 
 router.post('/games', (req, res) => {
    let gameId = app.locals.games.length
