@@ -1,0 +1,15 @@
+body{
+
+    background-color: #aaa;
+}
+
+strong{
+    font-weight: bold;
+}
+@media (min-width:800px){
+    .userInputs{
+display: flex;
+justify-content: space-between;
+    }
+    #play_btn { display:none; }
+}
