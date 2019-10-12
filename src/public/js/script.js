@@ -29,8 +29,6 @@ $(".level").change(function () {
   start(level)
 })
 
-
-
 $('#play_btn').on('click',()=>{
     userNumber = $('input').val();
     if (level != null) {
