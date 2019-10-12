@@ -17,7 +17,7 @@ app.set('view engine', config.viewEngine);
 const unexpectedError = (err,req, res, next) => {
     console.error(err.stack);
     res.status(500).json({ error: err.message });
-    next(); // esto es necesario para que la petición continúe
+    next(); // 
 }
 
 //middlewares
